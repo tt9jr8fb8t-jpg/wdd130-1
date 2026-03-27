@@ -176,7 +176,7 @@ body {
 .columninfo {
     background-color: #F1F1EF;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     gap: 30px;
     padding: 40px 5%;
@@ -211,7 +211,7 @@ body {
 /* Footer */
 footer {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-evenly; 
     align-items: center;           
     padding: 20px 50px;            
     background-color: white;
@@ -239,7 +239,6 @@ footer p {
     text-decoration: none;
     color: #44816D;
     font-size: 0.9rem;
-    transition: 0.3s;
 }
 
 .footnav a:hover {
@@ -254,7 +253,6 @@ footer p {
 .social .icon {
     width: 25px;
     filter: grayscale(100%) opacity(0.5);
-    transition: 0.3s;
 }
 
 .social .icon:hover {
