@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&family=Questrial&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, .home-title, .text p, nav a, .footnav a, a {
+    font-family: "Questrial", sans-serif;
+}
+
+p, .columninfo p {
+    font-family: "Maitree", serif;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    max-width: 1100px;
+    z-index: 1000;
+    background-color: #F1F1EF;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 12px;
+}
+
+
+#logo_link .logo {
+    width: 40px;
+    height: auto;
+    display: block;
+    margin-right: 15px;
+}
+
+header > a:not(#logo_link) {
+    text-decoration: none;
+    color: #44816D;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: auto;
+}
+
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+
+nav a {
+    background-color: White;
+    color: #2F745E;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    transform: translateY(-1px);
+}
+
+body {
+    margin: 0;
+    padding-top: 100px; 
+}
+
+
+/* Hero */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+#hero-msg h4 {
+    font-size: 1.2rem;
+    color: #44816D;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.navbutton {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.navbutton .nav {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.navbutton .nav:first-child {
+    background-color: #44816D;
+    color: white;
+}
+
+.navbutton .nav:last-child {
+    background-color: white;
+    color: #2F745E;
+    border: 2px solid #44816D;
+}
+
+#hero-img {
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 20px;
+}
+
+
+/* Text Blocks */
+.home-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 80px 20px;
+}
+
+.home-grid {
+    font-weight: 800;
+}
+
+.home-grid section {
+    max-width: 1200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-grid p {
+    color: #44816D;
+}
+
+.text, .text2 {
+    margin-top: 40px;
+    background-color: #2F745E;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: 500;
+}
+
+
+.text p, .text2 p {
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Columned text */
+.columninfo {
+    background-color: #F1F1EF;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 5%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.columninfo section {
+    flex: 1;
+    text-align: left;
+}
+
+.columninfo h3 {
+    padding-top: 15px;
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 15px;
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+}
+
+.columninfo p {
+    font-size: 1rem;
+    color: grey;
+    line-height: 1.5;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;           
+    padding: 20px 50px;            
+    background-color: white;
+}
+
+.logofooter {
+    width: 85px;   
+    height: auto;
+    border-radius: 12px;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 700;
+    color: #44816D;
+}
+
+.footnav {
+    display: flex;
+    gap: 30px;
+    color: #44816D;
+}
+
+.footnav a {
+    text-decoration: none;
+    color: #44816D;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.footnav a:hover {
+    color: #2F745E;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social .icon {
+    width: 25px;
+    filter: grayscale(100%) opacity(0.5);
+    transition: 0.3s;
+}
+
+.social .icon:hover {
+    filter: grayscale(0%) opacity(1);
+}
+
+/* Media */
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+    #hero {
+        margin-top: 0;
+    }
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg, .riverraft {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}
